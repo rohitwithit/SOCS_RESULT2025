@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Result - 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('main.jpg');
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        #socs{
+            color: white;
+        }
+        .card{
+            background-color: #F3F3E0;
+        }
+         #mainpage{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+             background-color: #6c757d;
+            margin-left: 10px;
+        }
+        #mainpage:hover {
+            background-color: #1765cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="back_image">
+        <div class="header">
+            <div class="logo-container">
+                <img src="KBCNMUlogo.jpeg" alt="KBCNMU Logo" class="logo">
+                <div class="title-container">
+                    <h3 id="socs"><b>Kavayitri Bahinabai Chaudhari North Maharashtra University,Jalgaon</b></h3>
+                    <h3 id="socs"><b>School of Computer Sciences</b></h3>
+                    <h1>MCA Semester-II Examination Apr/May - 2025</h1>
+                    
+                </div>
+                <img src="LOGO2.jpg" alt="KBCNMU Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Student Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="SEAT_NO"><b>SEAT NUMBER</b></label>
+                    <input type="number" id="SEAT_NO" name="SEAT_NO" required>
+                </div>
+                <div class="form-group">
+                    <label for="MOTHER_NAME"><b>MOTHER NAME</b></label>
+                    <input type="text" id="MOTHER_NAME" name="MOTHER_NAME" placeholder="Enter Here" required>
+                </div>
+                <button type="submit">View Results</button>
+            </form>
+            <div id="errorMessage" class="error hidden"></div>
+        </div>
+         <a href="../index.html" id="mainpage">Go to main Page</a>
+        <footer>
+            <p id="socs">Disclaimer : Your information is safe. We use  encryption and never share your data without your permission. </p>
+        </footer>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Result - 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<style>
+    .div3 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 5px;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid black;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    tr:last-child td {
+        border-bottom: 1px solid black !important;
+        /* Ensure last row border */
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ccc;
+    }
+
+    #subnm {
+        text-align: left;
+    }
+
+    /* Main container */
+    .student-container {
+        display: flex;
+        background-color: #eff1f4;
+        border-radius: 15px;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Student information section */
+    #studentInfo1 {
+        flex: 2;
+        margin-left: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Student photo section */
+    #studentInfo2 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Information rows */
+    .info-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .info-item,
+    .info-item1 {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    /* Photo styling */
+    #PHOTO {
+        width: 170px;
+        height: 220px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid black;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .student-container {
+            flex-direction: column;
+        }
+
+        #studentInfo2 {
+            order: -1;
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    #lastrow{
+        font-size: 20px;
+    }
+    #head1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="KBCNMUlogo.jpeg" alt="KBCNMU Logo" class="logo">
+                <div class="title-container">
+                    <h3><b>Kavayitri Bahinabai Chaudhari North Maharashtra University,Jalgaon</b></h3>
+                    <h3><b>School of Computer Sciences</b></h3>
+                    <h1>MCA Semester-II Examination Apr/May - 2025</h1>
+                </div>
+                <img src="LOGO2.jpg" alt="KBCNMU Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><b>Statement of Grades</b></h2>
+            <h2><b>M.C.A. Part-I</b></h2>
+            <h3 id="rhead3">As Per NEP-2020 [June-2024] Pattern Examination held in Summer-2025</h3>
+            <div class="student-container">
+                <!-- Student Information (Left Side) -->
+                <div id="studentInfo1">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <p><strong>Seat No: </strong> <b id="head1"><span id="SEAT_NO" ></span></b></p>
+                        </div>
+                        <div class="info-item">
+                            <p><strong>Center: </strong> <b id="head1">1000</b></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="">
+                            <p><strong>PRN: </strong><b id="head1"><span id="PRN" ></span></b></p>
+                        </div>
+                        <div class="info-item1">
+                            <p><strong>Name: </strong> <b id="head1"><span id="NAME" ></span></b> (<b id="head1"><span id="MOTHER_NAME" ></span></b>)</p>
+                        </div>
+                        <div class="clg">
+                            <p><strong>College: </strong> <b id="head1">School of Computer Sciences, Jalgaon (10000G)</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Photo (Right Side) -->
+                <div id="studentInfo2">
+                    <img src="" alt="Student Photo" id="PHOTO">
+                </div>
+            </div>
+            <div id="studentInfo">
+                <div id="resultDetails" class="div3">
+                    <table>
+                        <tr>
+                            <th><b>Subject Code</b></th>
+                            <th id="subnm"><b>Subject Name</b></th>
+                            <th><b>INT</b></th>
+                            <th><b>EXT</b></th>
+                            <th><b>Total</b></th>
+                            <th><b>Out Of</b></th>
+                            <th><b>Credits</b></th>
+                            <th><b>Grade</b></th>
+                            <th><b>Grade Point</b></th>
+                            <th><b>Total Grade Points</b></th>
+                            <th><b>Status</b></th>
+                        </tr>
+                        <tr>
+                            <td>1222420001</td>
+                            <td id="subnm">MCA-421 Advanced Software Development Methodologies</td>
+                            <td><span id="MCA421I"></span></td>
+                            <td><span id="MCA421E"></span></td>
+                            <td><span id="MCA421TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCA421GR"></span></td>
+                            <td><span id="MCA421GP"></span></td>
+                            <td><span id="MCA421TGP"></span></td>
+                            <td><span id="MCA421STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222420002</td>
+                            <td id="subnm">MCA-422 Data Structures and Algorithms</td>
+                            <td><span id="MCA422I"></span></td>
+                            <td><span id="MCA422E"></span></td>
+                            <td><span id="MCA422TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCA422GR"></span></td>
+                            <td><span id="MCA422GP"></span></td>
+                            <td><span id="MCA422TGP"></span></td>
+                            <td><span id="MCA422STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222420003</td>
+                            <td id="subnm">MCA-423 Java Programming (Core Java)</td>
+                            <td><span id="MCA423I"></span></td>
+                            <td><span id="MCA423E"></span></td>
+                            <td><span id="MCA423TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA423GR"></span></td>
+                            <td><span id="MCA423GP"></span></td>
+                            <td><span id="MCA423TGP"></span></td>
+                            <td><span id="MCA423STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="subjectCodeElective">1222420063</span></td>
+                            <td id="subnm">
+                                <span id="subjectNameElective">MCA-427(A) Python Programming</span>
+                            </td>
+                            <td><span id="MCA427AI"></span></td>
+                            <td><span id="MCA427AE"></span></td>
+                            <td><span id="MCA427ATL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA427AGR"></span></td>
+                            <td><span id="MCA427AGP"></span></td>
+                            <td><span id="MCA427ATGP"></span></td>
+                            <td><span id="MCA427ASTATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222420071</td>
+                            <td id="subnm">MCA-428(A) Data Science</td>
+                            <td><span id="MCA428AI"></span></td>
+                            <td><span id="MCA428AE"></span></td>
+                            <td><span id="MCA428ATL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA428AGR"></span></td>
+                            <td><span id="MCA428AGP"></span></td>
+                            <td><span id="MCA428ATGP"></span></td>
+                            <td><span id="MCA428ASTATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222420010</td>
+                            <td id="subnm">MCA-416 Research Methodology</td>
+                            <td><span id="MCA416I"></span></td>
+                            <td><span id="MCA416E"></span></td>
+                            <td><span id="MCA416TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCA416GR"></span></td>
+                            <td><span id="MCA416GP"></span></td>
+                            <td><span id="MCA416TGP"></span></td>
+                            <td><span id="MCA416STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222420004</td>
+                            <td id="subnm">MCA-424 Lab on Data Structures and Algorithms</td>
+                            <td><span id="MCA424I"></span></td>
+                            <td><span id="MCA424E"></span></td>
+                            <td><span id="MCA424TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA424GR"></span></td>
+                            <td><span id="MCA424GP"></span></td>
+                            <td><span id="MCA424TGP"></span></td>
+                            <td><span id="MCA424STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222420005</td>
+                            <td id="subnm">MCA-425 Lab on Java Programming</td>
+                            <td><span id="MCA425I"></span></td>
+                            <td><span id="MCA425E"></span></td>
+                            <td><span id="MCA425TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA425GR"></span></td>
+                            <td><span id="MCA425GP"></span></td>
+                            <td><span id="MCA425TGP"></span></td>
+                            <td><span id="MCA425STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="subjectCodeElective1">1222420064</span></td>
+                            <td id="subnm">
+                                <span id="subjectNameElective1">MCA-427(B) Lab on Python Programming</span>
+                            </td>
+                            <td><span id="MCA427BI"></span></td>
+                            <td><span id="MCA427BE"></span></td>
+                            <td><span id="MCA427BTL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA427BGR"></span></td>
+                            <td><span id="MCA427BGP"></span></td>
+                            <td><span id="MCA427BTGP"></span></td>
+                            <td><span id="MCA427BSTATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222420072</td>
+                            <td id="subnm">MCA-428(B) Lab on Data Science</td>
+                            <td><span id="MCA428BI"></span></td>
+                            <td><span id="MCA428BE"></span></td>
+                            <td><span id="MCA428BTL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA428BGR"></span></td>
+                            <td><span id="MCA428BGP"></span></td>
+                            <td><span id="MCA428BTGP"></span></td>
+                            <td><span id="MCA428BSTATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="lastrow"><b>CGPA : <span id="CGPA"></span></b></td>
+                            <td colspan="6" id="lastrow"><b>Percentage : <span id="PERCENTAGE"></span></b> </td>
+                            <td colspan="3" id="lastrow"><b>Total : <span id="TOTAL"></span> /650</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="11"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3><b>Date : 15/05/2025</b></h3>
+                </div>
+
+            </div>
+            <div >
+                <div id="btn11">
+                    <button onclick="downloadPDF()" class="download-btn1">Download PDF</button>
+                </div>
+                <div id="btn12">
+                    <button onclick="logout()" class="logout-btn" >Logout</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p><b>&copy; This is provisional result</b></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
