@@ -1,0 +1,446 @@
+[
+  {
+    "SEAT_NO": 380234,
+    "NAME": "AMBEKAR GAYATRI PRAKASH",
+    "PRN": "2024015400439897",
+    "MOTHER_NAME": "VANDANA",
+    "PHOTO": "passport/380234.jpg",
+    "MCS421I": 24,
+    "MCS421E": 36,
+    "MCS421TL": 60,
+    "MCS421GR": "A",
+    "MCS421GP": 8,
+    "MCS421TGP": 32,
+    "MCS421STATUS": "P",
+    "MCS422I": 24,
+    "MCS422E": 36,
+    "MCS422TL": 60,
+    "MCS422GR": "A",
+    "MCS422GP": 8,
+    "MCS422TGP": 32,
+    "MCS422STATUS": "P",
+    "MCS423I": 24,
+    "MCS423E": 36,
+    "MCS423TL": 60,
+    "MCS423GR": "A",
+    "MCS423GP": 8,
+    "MCS423TGP": 32,
+    "MCS423STATUS": "P",
+    "MCS424I": 18,
+    "MCS424E": 22,
+    "MCS424TL": 40,
+    "MCS424GR": "A++",
+    "MCS424GP": 8,
+    "MCS424TGP": 32,
+    "MCS424STATUS": "P",
+    "MCSE427AI": 24,
+    "MCSE427AE": 36,
+    "MCSE427ATL": 60,
+    "MCSE427AGR": "A",
+    "MCSE427AGP": 8,
+    "MCSE427ATGP": 32,
+    "MCSE427ASTATUS": "P",
+    "MCS425I": 20,
+    "MCS425E": 30,
+    "MCS425TL": 50,
+    "MCS425GR": "O",
+    "MCS425GP": 10,
+    "MCS425TGP": 20,
+    "MCS425STATUS": "P",
+    "MCS426I": 15,
+    "MCS426E": 26,
+    "MCS426TL": 41,
+    "MCS426GR": "O",
+    "MCS426GP": 10,
+    "MCS426TGP": 20,
+    "MCS426STATUS": "P",
+    "TOTAL": 371,
+    "PERCENTAGE": 67.45,
+    "CGPA": 8.01
+  },
+  {
+    "SEAT_NO": 380235,
+    "NAME": "BADGUJAR CHANCHAL SUPADU",
+    "PRN": "2024015400393506",
+    "MOTHER_NAME": "VIDYA",
+    "PHOTO": "passport/380235.jpg"
+  },
+  {
+    "SEAT_NO": 380236,
+    "NAME": "BARI GAYATRI SANJAY",
+    "PRN": "2024015400391403",
+    "MOTHER_NAME": "SUNITA",
+    "PHOTO": "passport/380236.jpg"
+  },
+  {
+    "SEAT_NO": 380237,
+    "NAME": "BARI PANKAJ RAMCHANDRA",
+    "PRN": "2024015400433807",
+    "MOTHER_NAME": "VAISHALI",
+    "PHOTO": "passport/380237.jpg"
+  },
+  {
+    "SEAT_NO": 380238,
+    "NAME": "BHADANGE SHITAL BHIKARI",
+    "PRN": "2024015400422109",
+    "MOTHER_NAME": "NIRMALA",
+    "PHOTO": "passport/380238.jpg"
+  },
+  {
+    "SEAT_NO": 380239,
+    "NAME": "BHAMARE KARTIKI SANDIP",
+    "PRN": "2024015400390953",
+    "MOTHER_NAME": "SUVARNA",
+    "PHOTO": "passport/380239.jpg"
+  },
+  {
+    "SEAT_NO": 380240,
+    "NAME": "BHOI ROHIT TARACHAND",
+    "PRN": "2024015400392461",
+    "MOTHER_NAME": "JAYASHRI",
+    "PHOTO": "passport/380240.jpg"
+  },
+  {
+    "SEAT_NO": 380241,
+    "NAME": "CHAUDHARI GAYATRI DILIP",
+    "PRN": "2024015400442884",
+    "MOTHER_NAME": "MIRABAI",
+    "PHOTO": "passport/380241.jpg"
+  },
+  {
+    "SEAT_NO": 380242,
+    "NAME": "CHAUDHARI PRITI VASUDEV",
+    "PRN": "2024015400423666",
+    "MOTHER_NAME": "NITA",
+    "PHOTO": "passport/380242.jpg"
+  },
+  {
+    "SEAT_NO": 380243,
+    "NAME": "CHAUDHARI SAKSHI ANIL",
+    "PRN": "2024015400431051",
+    "MOTHER_NAME": "JYOTI",
+    "PHOTO": "passport/380243.jpg"
+  },
+  {
+    "SEAT_NO": 380244,
+    "NAME": "GIRASE VAISHNAVI DEVESING",
+    "PRN": "2024015400391593",
+    "MOTHER_NAME": "ANITABAI",
+    "PHOTO": "passport/380244.jpg"
+  },
+  {
+    "SEAT_NO": 380245,
+    "NAME": "GIRASE YAMINI RAMSING",
+    "PRN": "2024015400423353",
+    "MOTHER_NAME": "SUREKHABAI",
+    "PHOTO": "passport/380245.jpg"
+  },
+  {
+    "SEAT_NO": 380246,
+    "NAME": "GOSAVI PRIYA SURESH",
+    "PRN": "2024015400391361",
+    "MOTHER_NAME": "ANITA",
+    "PHOTO": "passport/380246.jpg"
+  },
+  {
+    "SEAT_NO": 380247,
+    "NAME": "JADHAV DIPAK ANIL",
+    "PRN": "2024015400391113",
+    "MOTHER_NAME": "SANGITA",
+    "PHOTO": "passport/380247.jpg"
+  },
+  {
+    "SEAT_NO": 380248,
+    "NAME": "JADHAV GAYATRI CHANDRASHEKHAR",
+    "PRN": "2024015400392155",
+    "MOTHER_NAME": "SUNITA",
+    "PHOTO": "passport/380248.jpg"
+  },
+  {
+    "SEAT_NO": 380249,
+    "NAME": "JADHAV POOJA KRUSHNA",
+    "PRN": "2024015400390825",
+    "MOTHER_NAME": "SUREKHAA",
+    "PHOTO": "passport/380249.jpg"
+  },
+  {
+    "SEAT_NO": 380250,
+    "NAME": "KALAL ROSHANI BHAGWAN",
+    "PRN": "2024015400422117",
+    "MOTHER_NAME": "MANGALA",
+    "PHOTO": "passport/380250.jpg"
+  },
+  {
+    "SEAT_NO": 380251,
+    "NAME": "KHARCHE POONAM ANANTA",
+    "PRN": "2024015400391724",
+    "MOTHER_NAME": "SANJIVANI",
+    "PHOTO": "passport/380251.jpg"
+  },
+  {
+    "SEAT_NO": 380253,
+    "NAME": "KUMAVAT PAVAN SANJAY",
+    "PRN": "2024015400391786",
+    "MOTHER_NAME": "YOGITA",
+    "PHOTO": "passport/380253.jpg"
+  },
+  {
+    "SEAT_NO": 380254,
+    "NAME": "MAHADIK MAYURI SANJAY",
+    "PRN": "2024015400390730",
+    "MOTHER_NAME": "SAVITA",
+    "PHOTO": "passport/380254.jpg"
+  },
+  {
+    "SEAT_NO": 380255,
+    "NAME": "MAHAJAN ASHWARYA SONLAL",
+    "PRN": "2024015400391925",
+    "MOTHER_NAME": "KAVITA",
+    "PHOTO": "passport/380255.jpg"
+  },
+  {
+    "SEAT_NO": 380256,
+    "NAME": "MAHAJAN POOJA MURALIDHAR",
+    "PRN": "2024015400424967",
+    "MOTHER_NAME": "SARALA",
+    "PHOTO": "passport/380256.jpg"
+  },
+  {
+    "SEAT_NO": 380257,
+    "NAME": "MAHALE PRIYANKA TUKARAM",
+    "PRN": "2024015400392180",
+    "MOTHER_NAME": "MANDAKINI",
+    "PHOTO": "passport/380257.jpg"
+  },
+  {
+    "SEAT_NO": 380258,
+    "NAME": "MORE VAISHALI ASHOK",
+    "PRN": "2024015400434552",
+    "MOTHER_NAME": "SHINDHU",
+    "PHOTO": "passport/380258.jpg"
+  },
+  {
+    "SEAT_NO": 380260,
+    "NAME": "NARKHEDE SAKSHI JAYANT",
+    "PRN": "2024015400390937",
+    "MOTHER_NAME": "JYOTI",
+    "PHOTO": "passport/380260.jpg"
+  },
+  {
+    "SEAT_NO": 380261,
+    "NAME": "NIKAM RUSHIKESH KISHOR",
+    "PRN": "2024015400391836",
+    "MOTHER_NAME": "KAVITA",
+    "PHOTO": "passport/380261.jpg"
+  },
+  {
+    "SEAT_NO": 380262,
+    "NAME": "PARDESHI KAUSHIKI GAUTAM",
+    "PRN": "2024015400422010",
+    "MOTHER_NAME": "SARIKA",
+    "PHOTO": "passport/380262.jpg"
+  },
+  {
+    "SEAT_NO": 380263,
+    "NAME": "PARDESHI VAISHNAVI DIPAK",
+    "PRN": "2024015400390791",
+    "MOTHER_NAME": "ANITA",
+    "PHOTO": "passport/380263.jpg"
+  },
+  {
+    "SEAT_NO": 380264,
+    "NAME": "PATIL AKSHAY ARUN",
+    "PRN": "2024015400425472",
+    "MOTHER_NAME": "SUREKHA",
+    "PHOTO": "passport/380264.jpg"
+  },
+  {
+    "SEAT_NO": 380265,
+    "NAME": "PATIL ASHWINI ARUN",
+    "PRN": "2024015400390945",
+    "MOTHER_NAME": "MAYA",
+    "PHOTO": "passport/380265.jpg"
+  },
+  {
+    "SEAT_NO": 380266,
+    "NAME": "PATIL ASHWINI SANJAY",
+    "PRN": "2024015400423600",
+    "MOTHER_NAME": "SUREKHA",
+    "PHOTO": "passport/380266.jpg"
+  },
+  {
+    "SEAT_NO": 380267,
+    "NAME": "PATIL DIPALI GANESH",
+    "PRN": "2024015400423411",
+    "MOTHER_NAME": "SUNITA",
+    "PHOTO": "passport/380267.jpg"
+  },
+  {
+    "SEAT_NO": 380268,
+    "NAME": "PATIL HARSHADA PRADIP",
+    "PRN": "2024015400393657",
+    "MOTHER_NAME": "PUSHPALATA",
+    "PHOTO": "passport/380268.jpg"
+  },
+  {
+    "SEAT_NO": 380269,
+    "NAME": "PATIL JAGRUTI CHHOTU",
+    "PRN": "2024015400391666",
+    "MOTHER_NAME": "MAYA",
+    "PHOTO": "passport/380269.jpg"
+  },
+  {
+    "SEAT_NO": 380271,
+    "NAME": "PATIL KOMAL DASHARATH",
+    "PRN": "2024015400434544",
+    "MOTHER_NAME": "GIRIJABAI",
+    "PHOTO": "passport/380271.jpg"
+  },
+  {
+    "SEAT_NO": 380272,
+    "NAME": "PATIL KOMAL DNYANESHWAR",
+    "PRN": "2024015400478543",
+    "MOTHER_NAME": "BHARATI",
+    "PHOTO": "passport/380272.jpg"
+  },
+  {
+    "SEAT_NO": 380273,
+    "NAME": "PATIL KOMAL VITTHAL",
+    "PRN": "2024015400391055",
+    "MOTHER_NAME": "GAYATRI",
+    "PHOTO": "passport/380273.jpg"
+  },
+  {
+    "SEAT_NO": 380274,
+    "NAME": "PATIL LONIKA HEMANT",
+    "PRN": "2024015400440227",
+    "MOTHER_NAME": "NILIMA",
+    "PHOTO": "passport/380274.jpg"
+  },
+  {
+    "SEAT_NO": 380275,
+    "NAME": "PATIL MOHINI RAMKRUSHNA",
+    "PRN": "2024015400391794",
+    "MOTHER_NAME": "SULABHA",
+    "PHOTO": "passport/380275.jpg"
+  },
+  {
+    "SEAT_NO": 380276,
+    "NAME": "PATIL MONIKA KISHOR",
+    "PRN": "2024015400390992",
+    "MOTHER_NAME": "BHARATI",
+    "PHOTO": "passport/380276.jpg"
+  },
+  {
+    "SEAT_NO": 380277,
+    "NAME": "PATIL PRITEE SHALIK",
+    "PRN": "2024015400391697",
+    "MOTHER_NAME": "SADHANA",
+    "PHOTO": "passport/380277.jpg"
+  },
+  {
+    "SEAT_NO": 380278,
+    "NAME": "PATIL RIDDHI DATTU",
+    "PRN": "2024015400433757",
+    "MOTHER_NAME": "SHOBHA",
+    "PHOTO": "passport/380278.jpg"
+  },
+  {
+    "SEAT_NO": 380279,
+    "NAME": "PATIL VAISHNAVI RAVINDRA",
+    "PRN": "2024015400391941",
+    "MOTHER_NAME": "KALPANA",
+    "PHOTO": "passport/380279.jpg"
+  },
+  {
+    "SEAT_NO": 380280,
+    "NAME": "PAWAR HARSHADA PRABHAKAR",
+    "PRN": "2024015400391716",
+    "MOTHER_NAME": "JYOTI",
+    "PHOTO": "passport/380280.jpg"
+  },
+  {
+    "SEAT_NO": 380281,
+    "NAME": "PAWAR NAMRATA ANIL",
+    "PRN": "2024015400390841",
+    "MOTHER_NAME": "ALKA",
+    "PHOTO": "passport/380281.jpg"
+  },
+  {
+    "SEAT_NO": 380282,
+    "NAME": "PAWAR PAYAL SUNIL",
+    "PRN": "2024015400391755",
+    "MOTHER_NAME": "PRATIBHA",
+    "PHOTO": "passport/380282.jpg"
+  },
+  {
+    "SEAT_NO": 380283,
+    "NAME": "RANE KOMAL ARVIND",
+    "PRN": "2024015400390864",
+    "MOTHER_NAME": "YOGITA",
+    "PHOTO": "passport/380283.jpg"
+  },
+  {
+    "SEAT_NO": 380284,
+    "NAME": "SAINDANE RAJASHRI MANOHAR",
+    "PRN": "2024015400390802",
+    "MOTHER_NAME": "BHAGYASHRI",
+    "PHOTO": "passport/380284.jpg"
+  },
+  {
+    "SEAT_NO": 380285,
+    "NAME": "SHEWALE MANSI SUBHASH",
+    "PRN": "2024015400392171",
+    "MOTHER_NAME": "MANISHA",
+    "PHOTO": "passport/380285.jpg"
+  },
+  {
+    "SEAT_NO": 380286,
+    "NAME": "SHIRSATH HARSHALI KISHOR",
+    "PRN": "2024015400390775",
+    "MOTHER_NAME": "TARUNI",
+    "PHOTO": "passport/380286.jpg"
+  },
+  {
+    "SEAT_NO": 380287,
+    "NAME": "SISODE PRATIKSHA VIJAY",
+    "PRN": "2024015400393232",
+    "MOTHER_NAME": "PUSHPANJALI",
+    "PHOTO": "passport/380287.jpg"
+  },
+  {
+    "SEAT_NO": 380288,
+    "NAME": "SONAWANE MAYURI ANIL",
+    "PRN": "2024015400391917",
+    "MOTHER_NAME": "VAISHALI",
+    "PHOTO": "passport/380288.jpg"
+  },
+  {
+    "SEAT_NO": 380289,
+    "NAME": "TALELE GAYATRI VISHNU",
+    "PRN": "2024015400422067",
+    "MOTHER_NAME": "PRATIBHA",
+    "PHOTO": "passport/380289.jpg"
+  },
+  {
+    "SEAT_NO": 380290,
+    "NAME": "TATHE MUKTA ISHWAR",
+    "PRN": "2024015400391473",
+    "MOTHER_NAME": "MANDABAI",
+    "PHOTO": "passport/380290.jpg"
+  },
+  {
+    "SEAT_NO": 380291,
+    "NAME": "TAYADE ASHWINI PURUSHOTTAM",
+    "PRN": "2024015400391426",
+    "MOTHER_NAME": "VAISHALI",
+    "PHOTO": "passport/380291.jpg"
+  },
+  {
+    "SEAT_NO": 380292,
+    "NAME": "VAIDYA YOGITA SANTOSH",
+    "PRN": "2024015400422036",
+    "MOTHER_NAME": "PRATIBHA",
+    "PHOTO": "passport/380292.jpg"
+  }
+]
