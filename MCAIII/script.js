@@ -5,10 +5,15 @@ async function fetchResults() {
         const data = await response.json();
 
         const SEAT_NO = localStorage.getItem('userSEAT_NO');
-        if (!SEAT_NO) window.location.href = 'index1.html';
+        if (!SEAT_NO || isNaN(SEAT_NO)) {
+            window.location.href = 'index1.html';
+            return;
+        }
+
+        const seatNo = Number(SEAT_NO);
 
         const studentData = data.find(student =>
-            student.SEAT_NO === parseInt(SEAT_NO)
+            Number(student.SEAT_NO) === seatNo
         );
 
         if (studentData) displayResults(studentData);
@@ -147,7 +152,7 @@ function displayResults(data) {
         subjectCode1.textContent = '1222430044';
         subjectName1.textContent = 'MCA-515(B) Lab on AI in Practice with Python';
     } else {
-        subjectCode1.textContent = '1222420064';
+        subjectCode1.textContent = '1222430046';
         subjectName1.textContent = 'MCA-516(B) Lab on High Performanc Computing';
     }
 
@@ -162,76 +167,48 @@ document.addEventListener('DOMContentLoaded', fetchResults);
 
 
 
-async function downloadPDF() {
+function downloadPDF() {
+    // Get button container and store original display style
+    const buttonContainer = document.querySelector('#btn11').parentNode;
+    const originalDisplay = window.getComputedStyle(buttonContainer).display;
+
+    // Hide buttons temporarily
+    buttonContainer.style.display = 'none';
+
+    // Initialize jsPDF
     const { jsPDF } = window.jspdf;
-
     const doc = new jsPDF('p', 'mm', 'a4');
-    const lineHeight = 7;
-    let y = 20;
 
-    // Get student data
-    const seatNo = document.getElementById('SEAT_NO').textContent.trim();
-    const prn = document.getElementById('PRN').textContent.trim();
-    const name = document.getElementById('NAME').textContent.trim();
-    const motherName = document.getElementById('MOTHER_NAME').textContent.trim();
-    const cgpa = document.getElementById('CGPA').textContent.trim();
-    const percentage = document.getElementById('PERCENTAGE').textContent.trim();
-    const total = document.getElementById('TOTAL').textContent.trim();
+    // Get the HTML element to convert
+    const element = document.querySelector('.container');
 
-    // Header
-    doc.setFontSize(14);
-    doc.setFont("Times", "bold");
-    doc.text("Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon", 105, y, { align: "center" });
-    y += lineHeight;
-    doc.text("School of Computer Sciences", 105, y, { align: "center" });
-    y += lineHeight;
-    doc.setFontSize(12);
-    doc.text("MCA Semester-II Examination Apr/May - 2025", 105, y, { align: "center" });
-    y += lineHeight * 2;
+    // html2canvas options
+    const options = {
+        scale: 2,
+        useCORS: true,
+        logging: true,
+        scrollX: 0,
+        scrollY: 0,
+        windowWidth: element.scrollWidth,
+        windowHeight: element.scrollHeight
+    };
 
-    // Student Info
-    doc.setFont("Times", "normal");
-    doc.text(`Seat No: ${seatNo}    PRN: ${prn}`, 14, y);
-    y += lineHeight;
-    doc.text(`Name: ${name} (${motherName})`, 14, y);
-    y += lineHeight;
-    doc.text(`College: School of Computer Sciences, Jalgaon (10000G)`, 14, y);
-    y += lineHeight;
+    // Generate PDF
+    html2canvas(element, options).then((canvas) => {
+        const imgData = canvas.toDataURL('image/png');
+        const imgWidth = doc.internal.pageSize.getWidth() - 20;
+        const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    // Table headers
-    const headers = [["Code", "Subject", "INT", "EXT", "Total", "Out Of", "Credits", "Grade", "GP", "TGP", "Status"]];
+        doc.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+        const seatNo = document.getElementById('SEAT_NO').textContent.trim();
+        const name = document.getElementById('NAME').textContent.trim();
+        doc.save(`${seatNo}_${name}_Result.pdf`);
 
-    // Collect rows from HTML table
-    const rows = [];
-    const tableRows = document.querySelectorAll("#resultDetails table tr");
-    for (let i = 1; i < tableRows.length - 2; i++) {
-        const cells = tableRows[i].querySelectorAll("td");
-        if (cells.length === 11) {
-            rows.push(Array.from(cells).map(cell => cell.textContent.trim()));
-        }
-    }
-
-    // Add autoTable
-    doc.autoTable({
-        head: headers,
-        body: rows,
-        startY: y,
-        theme: 'grid',
-        styles: { font: "Times", fontSize: 9, halign: 'center' },
-        headStyles: { fillColor: [211, 211, 211], textColor: 0, fontStyle: 'bold' },
-        margin: { left: 10, right: 10 },
+    }).finally(() => {
+        // Restore buttons visibility
+        buttonContainer.style.display = originalDisplay;
     });
 
-    // After table
-    y = doc.lastAutoTable.finalY + 10;
-    doc.setFontSize(11);
-    doc.text(`CGPA: ${cgpa}`, 14, y);
-    doc.text(`Percentage: ${percentage}`, 80, y);
-    doc.text(`Total: ${total} / 650`, 150, y);
-    y += lineHeight;
-    doc.text("Date: 15/05/2025", 14, y);
 
-    // Save
-    doc.save(`${seatNo}_${name}_Result.pdf`);
+    alert("wait 10 seconds for Downloading PDF..");
 }
-
