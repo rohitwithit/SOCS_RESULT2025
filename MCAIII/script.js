@@ -29,96 +29,79 @@ function displayResults(data) {
     document.getElementById('NAME').textContent = data.NAME;
     document.getElementById('PRN').textContent = data.PRN;
     document.getElementById('MOTHER_NAME').textContent = data.MOTHER_NAME;
+    document.getElementById('PHOTO').src = data.PHOTO;
 
-    // MCA421
-    document.getElementById('MCA421I').textContent = data.MCA421I;
-    document.getElementById('MCA421E').textContent = data.MCA421E;
-    document.getElementById('MCA421TL').textContent = data.MCA421TL;
-    document.getElementById('MCA421GR').textContent = data.MCA421GR;
-    document.getElementById('MCA421GP').textContent = data.MCA421GP;
-    document.getElementById('MCA421TGP').textContent = data.MCA421TGP;
-    document.getElementById('MCA421STATUS').textContent = data.MCA421STATUS;
+    // MCA511
+    document.getElementById('MCA511I').textContent = data.MCA511I;
+    document.getElementById('MCA511E').textContent = data.MCA511E;
+    document.getElementById('MCA511TL').textContent = data.MCA511TL;
+    document.getElementById('MCA511GR').textContent = data.MCA511GR;
+    document.getElementById('MCA511GP').textContent = data.MCA511GP;
+    document.getElementById('MCA511TGP').textContent = data.MCA511TGP;
+    document.getElementById('MCA511STATUS').textContent = data.MCA511STATUS;
 
-    // MCA422
-    document.getElementById('MCA422I').textContent = data.MCA422I;
-    document.getElementById('MCA422E').textContent = data.MCA422E;
-    document.getElementById('MCA422TL').textContent = data.MCA422TL;
-    document.getElementById('MCA422GR').textContent = data.MCA422GR;
-    document.getElementById('MCA422GP').textContent = data.MCA422GP;
-    document.getElementById('MCA422TGP').textContent = data.MCA422TGP;
-    document.getElementById('MCA422STATUS').textContent = data.MCA422STATUS;
+    // MCA512
+    document.getElementById('MCA512I').textContent = data.MCA512I;
+    document.getElementById('MCA512E').textContent = data.MCA512E;
+    document.getElementById('MCA512TL').textContent = data.MCA512TL;
+    document.getElementById('MCA512GR').textContent = data.MCA512GR;
+    document.getElementById('MCA512GP').textContent = data.MCA512GP;
+    document.getElementById('MCA512TGP').textContent = data.MCA512TGP;
+    document.getElementById('MCA512STATUS').textContent = data.MCA512STATUS;
 
-    // MCA423
-    document.getElementById('MCA423I').textContent = data.MCA423I;
-    document.getElementById('MCA423E').textContent = data.MCA423E;
-    document.getElementById('MCA423TL').textContent = data.MCA423TL;
-    document.getElementById('MCA423GR').textContent = data.MCA423GR;
-    document.getElementById('MCA423GP').textContent = data.MCA423GP;
-    document.getElementById('MCA423TGP').textContent = data.MCA423TGP;
-    document.getElementById('MCA423STATUS').textContent = data.MCA423STATUS;
+    // MCA513
+    document.getElementById('MCA513I').textContent = data.MCA513I;
+    document.getElementById('MCA513E').textContent = data.MCA513E;
+    document.getElementById('MCA513TL').textContent = data.MCA513TL;
+    document.getElementById('MCA513GR').textContent = data.MCA513GR;
+    document.getElementById('MCA513GP').textContent = data.MCA513GP;
+    document.getElementById('MCA513TGP').textContent = data.MCA513TGP;
+    document.getElementById('MCA513STATUS').textContent = data.MCA513STATUS;
 
-    // MCA427A
-    document.getElementById('MCA427AI').textContent = data.MCA427AI;
-    document.getElementById('MCA427AE').textContent = data.MCA427AE;
-    document.getElementById('MCA427ATL').textContent = data.MCA427ATL;
-    document.getElementById('MCA427AGR').textContent = data.MCA427AGR;
-    document.getElementById('MCA427AGP').textContent = data.MCA427AGP;
-    document.getElementById('MCA427ATGP').textContent = data.MCA427ATGP;
-    document.getElementById('MCA427ASTATUS').textContent = data.MCA427ASTATUS;
+    // MCA516A
+    document.getElementById('MCA516AI').textContent = data.MCA516AI;
+    document.getElementById('MCA516AE').textContent = data.MCA516AE;
+    document.getElementById('MCA516ATL').textContent = data.MCA516ATL;
+    document.getElementById('MCA516AGR').textContent = data.MCA516AGR;
+    document.getElementById('MCA516AGP').textContent = data.MCA516AGP;
+    document.getElementById('MCA516ATGP').textContent = data.MCA516ATGP;
+    document.getElementById('MCA516ASTATUS').textContent = data.MCA516ASTATUS;
 
-    // MCA428A
-    document.getElementById('MCA428AI').textContent = data.MCA428AI;
-    document.getElementById('MCA428AE').textContent = data.MCA428AE;
-    document.getElementById('MCA428ATL').textContent = data.MCA428ATL;
-    document.getElementById('MCA428AGR').textContent = data.MCA428AGR;
-    document.getElementById('MCA428AGP').textContent = data.MCA428AGP;
-    document.getElementById('MCA428ATGP').textContent = data.MCA428ATGP;
-    document.getElementById('MCA428ASTATUS').textContent = data.MCA428ASTATUS;
+    // MCA516B
+    document.getElementById('MCA516BI').textContent = data.MCA516BI;
+    document.getElementById('MCA516BE').textContent = data.MCA516BE;
+    document.getElementById('MCA516BTL').textContent = data.MCA516BTL;
+    document.getElementById('MCA516BGR').textContent = data.MCA516BGR;
+    document.getElementById('MCA516BGP').textContent = data.MCA516BGP;
+    document.getElementById('MCA516BTGP').textContent = data.MCA516BTGP;
+    document.getElementById('MCA516BSTATUS').textContent = data.MCA516BSTATUS;
 
-    // MCA416
-    document.getElementById('MCA416I').textContent = data.MCA416I;
-    document.getElementById('MCA416E').textContent = data.MCA416E;
-    document.getElementById('MCA416TL').textContent = data.MCA416TL;
-    document.getElementById('MCA416GR').textContent = data.MCA416GR;
-    document.getElementById('MCA416GP').textContent = data.MCA416GP;
-    document.getElementById('MCA416TGP').textContent = data.MCA416TGP;
-    document.getElementById('MCA416STATUS').textContent = data.MCA416STATUS;
+    // MCA518A
+    document.getElementById('MCA518AI').textContent = data.MCA518AI;
+    document.getElementById('MCA518AE').textContent = data.MCA518AE;
+    document.getElementById('MCA518ATL').textContent = data.MCA518ATL;
+    document.getElementById('MCA518AGR').textContent = data.MCA518AGR;
+    document.getElementById('MCA518AGP').textContent = data.MCA518AGP;
+    document.getElementById('MCA518ATGP').textContent = data.MCA518ATGP;
+    document.getElementById('MCA518ASTATUS').textContent = data.MCA518ASTATUS;
 
-    // MCA424
-    document.getElementById('MCA424I').textContent = data.MCA424I;
-    document.getElementById('MCA424E').textContent = data.MCA424E;
-    document.getElementById('MCA424TL').textContent = data.MCA424TL;
-    document.getElementById('MCA424GR').textContent = data.MCA424GR;
-    document.getElementById('MCA424GP').textContent = data.MCA424GP;
-    document.getElementById('MCA424TGP').textContent = data.MCA424TGP;
-    document.getElementById('MCA424STATUS').textContent = data.MCA424STATUS;
+    // MCA518B
+    document.getElementById('MCA518BI').textContent = data.MCA518BI;
+    document.getElementById('MCA518BE').textContent = data.MCA518BE;
+    document.getElementById('MCA518BTL').textContent = data.MCA518BTL;
+    document.getElementById('MCA518BGR').textContent = data.MCA518BGR;
+    document.getElementById('MCA518BGP').textContent = data.MCA518BGP;
+    document.getElementById('MCA518BTGP').textContent = data.MCA518BTGP;
+    document.getElementById('MCA518BSTATUS').textContent = data.MCA518BSTATUS;
 
-    // MCA425
-    document.getElementById('MCA425I').textContent = data.MCA425I;
-    document.getElementById('MCA425E').textContent = data.MCA425E;
-    document.getElementById('MCA425TL').textContent = data.MCA425TL;
-    document.getElementById('MCA425GR').textContent = data.MCA425GR;
-    document.getElementById('MCA425GP').textContent = data.MCA425GP;
-    document.getElementById('MCA425TGP').textContent = data.MCA425TGP;
-    document.getElementById('MCA425STATUS').textContent = data.MCA425STATUS;
-
-    // MCA427B
-    document.getElementById('MCA427BI').textContent = data.MCA427BI;
-    document.getElementById('MCA427BE').textContent = data.MCA427BE;
-    document.getElementById('MCA427BTL').textContent = data.MCA427BTL;
-    document.getElementById('MCA427BGR').textContent = data.MCA427BGR;
-    document.getElementById('MCA427BGP').textContent = data.MCA427BGP;
-    document.getElementById('MCA427BTGP').textContent = data.MCA427BTGP;
-    document.getElementById('MCA427BSTATUS').textContent = data.MCA427BSTATUS;
-
-    // MCA428B
-    document.getElementById('MCA428BI').textContent = data.MCA428BI;
-    document.getElementById('MCA428BE').textContent = data.MCA428BE;
-    document.getElementById('MCA428BTL').textContent = data.MCA428BTL;
-    document.getElementById('MCA428BGR').textContent = data.MCA428BGR;
-    document.getElementById('MCA428BGP').textContent = data.MCA428BGP;
-    document.getElementById('MCA428BTGP').textContent = data.MCA428BTGP;
-    document.getElementById('MCA428BSTATUS').textContent = data.MCA428BSTATUS;
+    // MCA520
+    document.getElementById('MCA520I').textContent = data.MCA520I;
+    document.getElementById('MCA520E').textContent = data.MCA520E;
+    document.getElementById('MCA520TL').textContent = data.MCA520TL;
+    document.getElementById('MCA520GR').textContent = data.MCA520GR;
+    document.getElementById('MCA520GP').textContent = data.MCA520GP;
+    document.getElementById('MCA520TGP').textContent = data.MCA520TGP;
+    document.getElementById('MCA520STATUS').textContent = data.MCA520STATUS;
 
 
     // Total/CGPA
@@ -133,39 +116,42 @@ function displayResults(data) {
     const subjectCode1 = document.getElementById('subjectCodeElective1');
     const subjectName1 = document.getElementById('subjectNameElective1');
 
-    const specificSeatNumbers = [
-        380785,
-        380788,
-        380793,
-        380798,
-        380810,
-        380821,
-        380823,
-        380825,
-        380826,
-        380832,
-        380836,
-        380843
+    const NLP = [
+        743081, 743082, 743086, 743088, 743089, 743092, 743093, 743096,
+        743104, 743107, 743109, 743111, 743116, 743124, 743130, 743135
+    ];
+
+    const AIP = [
+        743079, 743080, 743083, 743084, 743085, 743090, 743091, 743094,
+        743097, 743098, 743100, 743101, 743113, 743114, 743115, 743118,
+        743121, 743126, 743128, 743129, 743131, 743133
     ];
 
     // Check if current student's seat is in the special list
-    if (specificSeatNumbers.includes(Number(data.SEAT_NO))) {
-        subjectCode.textContent = '1222420061';
-        subjectName.textContent = 'MCA-426(A) Digital Image Processing(DIP)';
-    } else {
-        subjectCode.textContent = '1222420063';
-        subjectName.textContent = 'MCA-427(A) Python Programming';
+    if (NLP.includes(Number(data.SEAT_NO))) {
+        subjectCode.textContent = '1222430041';
+        subjectName.textContent = 'MCA-514(A) Natural Language Processing';
+    } else if (AIP.includes(Number(data.SEAT_NO))) {
+        subjectCode.textContent = '1222430043';
+        subjectName.textContent = 'MCA-515(A) AI in Practice with Python';
+    }
+    else {
+        subjectCode.textContent = '1222430045';
+        subjectName.textContent = 'MCA-516(A) High Performance Computing Paradigms and Applications';
     }
 
-    if (specificSeatNumbers.includes(Number(data.SEAT_NO))) {
-        subjectCode1.textContent = '1222420062';
-        subjectName1.textContent = 'MCA-426(B) Lab on DIP';
+    if (NLP.includes(Number(data.SEAT_NO))) {
+        subjectCode1.textContent = '1222430042';
+        subjectName1.textContent = 'MCA-514(B) Lab on Natural Language Processing';
+    } else if (AIP.includes(Number(data.SEAT_NO))) {
+        subjectCode1.textContent = '1222430044';
+        subjectName1.textContent = 'MCA-515(B) Lab on AI in Practice with Python';
     } else {
         subjectCode1.textContent = '1222420064';
-        subjectName1.textContent = 'MCA-427(B) Lab on Python Programming';
+        subjectName1.textContent = 'MCA-516(B) Lab on High Performanc Computing';
     }
 
-    document.getElementById('PHOTO').src = data.PHOTO;
+
 }
 
 function logout() {
@@ -174,211 +160,78 @@ function logout() {
 }
 document.addEventListener('DOMContentLoaded', fetchResults);
 
-// function downloadPDF() {
-//     // Get button container and store original display style
-//     const buttonContainer = document.querySelector('#btn11').parentNode;
-//     const originalDisplay = window.getComputedStyle(buttonContainer).display;
-
-//     // Hide buttons temporarily
-//     buttonContainer.style.display = 'none';
-
-//     // Initialize jsPDF
-//     const { jsPDF } = window.jspdf;
-//     const doc = new jsPDF('p', 'mm', 'a4');
-
-//     // Get the HTML element to convert
-//     const element = document.querySelector('.container');
-
-//     // html2canvas options
-//     const options = {
-//         scale: 2,
-//         useCORS: true,
-//         logging: true,
-//         scrollX: 0,
-//         scrollY: 0,
-//         windowWidth: element.scrollWidth,
-//         windowHeight: element.scrollHeight
-//     };
-
-//     // Generate PDF
-//     html2canvas(element, options).then((canvas) => {
-//         const imgData = canvas.toDataURL('image/png');
-//         const imgWidth = doc.internal.pageSize.getWidth() - 20;
-//         const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-//         doc.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
-//         const seatNo = document.getElementById('SEAT_NO').textContent.trim();
-//         const name = document.getElementById('NAME').textContent.trim();
-//         doc.save(`${seatNo}_${name}_Result.pdf`);
-
-//     }).finally(() => {
-//         // Restore buttons visibility
-//         buttonContainer.style.display = originalDisplay;
-//     });
 
 
-//     alert("wait 10 seconds for Downloading PDF..");
-// }
+async function downloadPDF() {
+    const { jsPDF } = window.jspdf;
 
+    const doc = new jsPDF('p', 'mm', 'a4');
+    const lineHeight = 7;
+    let y = 20;
 
+    // Get student data
+    const seatNo = document.getElementById('SEAT_NO').textContent.trim();
+    const prn = document.getElementById('PRN').textContent.trim();
+    const name = document.getElementById('NAME').textContent.trim();
+    const motherName = document.getElementById('MOTHER_NAME').textContent.trim();
+    const cgpa = document.getElementById('CGPA').textContent.trim();
+    const percentage = document.getElementById('PERCENTAGE').textContent.trim();
+    const total = document.getElementById('TOTAL').textContent.trim();
 
+    // Header
+    doc.setFontSize(14);
+    doc.setFont("Times", "bold");
+    doc.text("Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon", 105, y, { align: "center" });
+    y += lineHeight;
+    doc.text("School of Computer Sciences", 105, y, { align: "center" });
+    y += lineHeight;
+    doc.setFontSize(12);
+    doc.text("MCA Semester-II Examination Apr/May - 2025", 105, y, { align: "center" });
+    y += lineHeight * 2;
 
+    // Student Info
+    doc.setFont("Times", "normal");
+    doc.text(`Seat No: ${seatNo}    PRN: ${prn}`, 14, y);
+    y += lineHeight;
+    doc.text(`Name: ${name} (${motherName})`, 14, y);
+    y += lineHeight;
+    doc.text(`College: School of Computer Sciences, Jalgaon (10000G)`, 14, y);
+    y += lineHeight;
 
+    // Table headers
+    const headers = [["Code", "Subject", "INT", "EXT", "Total", "Out Of", "Credits", "Grade", "GP", "TGP", "Status"]];
 
-
-
-
-
-
-
-    // async function downloadPDF() {
-    //     const { jsPDF } = window.jspdf;
-
-    //     const doc = new jsPDF({
-    //         orientation: 'portrait',
-    //         unit: 'mm',
-    //         format: 'a4'
-    //     });
-
-    //     const seatNo = document.getElementById('SEAT_NO').textContent.trim();
-    //     const name = document.getElementById('NAME').textContent.trim();
-    //     const motherName = document.getElementById('MOTHER_NAME').textContent.trim();
-    //     const prn = document.getElementById('PRN').textContent.trim();
-    //     const cgpa = document.getElementById('CGPA').textContent.trim();
-    //     const percentage = document.getElementById('PERCENTAGE').textContent.trim();
-    //     const total = document.getElementById('TOTAL').textContent.trim();
-
-    //     let y = 10;
-
-    //     doc.setFontSize(12);
-    //     doc.text("Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon", 10, y);
-    //     y += 7;
-    //     doc.text("School of Computer Sciences", 10, y);
-    //     y += 7;
-    //     doc.setFontSize(14);
-    //     doc.text("MCA Semester-II Examination Apr/May - 2025", 10, y);
-    //     y += 10;
-
-    //     doc.setFontSize(12);
-    //     doc.text(`Seat No: ${seatNo}`, 10, y);
-    //     doc.text(`PRN: ${prn}`, 100, y);
-    //     y += 7;
-    //     doc.text(`Name: ${name} (${motherName})`, 10, y);
-    //     y += 7;
-    //     doc.text("College: School of Computer Sciences, Jalgaon (10000G)", 10, y);
-    //     y += 10;
-
-    //     // Create table headers and rows
-    //     const headers = [
-    //         ["Code", "Subject", "INT", "EXT", "Total", "Out Of", "Credits", "Grade", "GP", "TGP", "Status"]
-    //     ];
-
-    //     const rows = [];
-    //     const tableRows = document.querySelectorAll("#resultDetails table tr");
-
-    //     for (let i = 1; i < tableRows.length - 2; i++) {
-    //         const cells = tableRows[i].querySelectorAll("td");
-    //         if (cells.length === 11) {
-    //             rows.push(Array.from(cells).map(cell => cell.textContent.trim()));
-    //         }
-    //     }
-
-    //     // Add table
-    //     doc.autoTable({
-    //         startY: y,
-    //         head: headers,
-    //         body: rows,
-    //         styles: { fontSize: 9, cellPadding: 2 },
-    //         theme: 'grid',
-    //         margin: { left: 10, right: 10 }
-    //     });
-
-    //     y = doc.lastAutoTable.finalY + 10;
-    //     doc.setFontSize(12);
-    //     doc.text(`CGPA: ${cgpa}`, 10, y);
-    //     doc.text(`Percentage: ${percentage}`, 80, y);
-    //     doc.text(`Total: ${total} / 650`, 150, y);
-
-    //     y += 10;
-    //     doc.text("Date: 15/05/2025", 10, y);
-
-    //     doc.save(`${seatNo}_${name}_Result.pdf`);
-    // }
-
-
-
-
-  
-    async function downloadPDF() {
-        const { jsPDF } = window.jspdf;
-
-        const doc = new jsPDF('p', 'mm', 'a4');
-        const lineHeight = 7;
-        let y = 20;
-
-        // Get student data
-        const seatNo = document.getElementById('SEAT_NO').textContent.trim();
-        const prn = document.getElementById('PRN').textContent.trim();
-        const name = document.getElementById('NAME').textContent.trim();
-        const motherName = document.getElementById('MOTHER_NAME').textContent.trim();
-        const cgpa = document.getElementById('CGPA').textContent.trim();
-        const percentage = document.getElementById('PERCENTAGE').textContent.trim();
-        const total = document.getElementById('TOTAL').textContent.trim();
-
-        // Header
-        doc.setFontSize(14);
-        doc.setFont("Times", "bold");
-        doc.text("Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon", 105, y, { align: "center" });
-        y += lineHeight;
-        doc.text("School of Computer Sciences", 105, y, { align: "center" });
-        y += lineHeight;
-        doc.setFontSize(12);
-        doc.text("MCA Semester-II Examination Apr/May - 2025", 105, y, { align: "center" });
-        y += lineHeight * 2;
-
-        // Student Info
-        doc.setFont("Times", "normal");
-        doc.text(`Seat No: ${seatNo}    PRN: ${prn}`, 14, y);
-        y += lineHeight;
-        doc.text(`Name: ${name} (${motherName})`, 14, y);
-        y += lineHeight;
-        doc.text(`College: School of Computer Sciences, Jalgaon (10000G)`, 14, y);
-        y += lineHeight;
-
-        // Table headers
-        const headers = [["Code", "Subject", "INT", "EXT", "Total", "Out Of", "Credits", "Grade", "GP", "TGP", "Status"]];
-
-        // Collect rows from HTML table
-        const rows = [];
-        const tableRows = document.querySelectorAll("#resultDetails table tr");
-        for (let i = 1; i < tableRows.length - 2; i++) {
-            const cells = tableRows[i].querySelectorAll("td");
-            if (cells.length === 11) {
-                rows.push(Array.from(cells).map(cell => cell.textContent.trim()));
-            }
+    // Collect rows from HTML table
+    const rows = [];
+    const tableRows = document.querySelectorAll("#resultDetails table tr");
+    for (let i = 1; i < tableRows.length - 2; i++) {
+        const cells = tableRows[i].querySelectorAll("td");
+        if (cells.length === 11) {
+            rows.push(Array.from(cells).map(cell => cell.textContent.trim()));
         }
-
-        // Add autoTable
-        doc.autoTable({
-            head: headers,
-            body: rows,
-            startY: y,
-            theme: 'grid',
-            styles: { font: "Times", fontSize: 9, halign: 'center' },
-            headStyles: { fillColor: [211, 211, 211], textColor: 0, fontStyle: 'bold' },
-            margin: { left: 10, right: 10 },
-        });
-
-        // After table
-        y = doc.lastAutoTable.finalY + 10;
-        doc.setFontSize(11);
-        doc.text(`CGPA: ${cgpa}`, 14, y);
-        doc.text(`Percentage: ${percentage}`, 80, y);
-        doc.text(`Total: ${total} / 650`, 150, y);
-        y += lineHeight;
-        doc.text("Date: 15/05/2025", 14, y);
-
-        // Save
-        doc.save(`${seatNo}_${name}_Result.pdf`);
     }
+
+    // Add autoTable
+    doc.autoTable({
+        head: headers,
+        body: rows,
+        startY: y,
+        theme: 'grid',
+        styles: { font: "Times", fontSize: 9, halign: 'center' },
+        headStyles: { fillColor: [211, 211, 211], textColor: 0, fontStyle: 'bold' },
+        margin: { left: 10, right: 10 },
+    });
+
+    // After table
+    y = doc.lastAutoTable.finalY + 10;
+    doc.setFontSize(11);
+    doc.text(`CGPA: ${cgpa}`, 14, y);
+    doc.text(`Percentage: ${percentage}`, 80, y);
+    doc.text(`Total: ${total} / 650`, 150, y);
+    y += lineHeight;
+    doc.text("Date: 15/05/2025", 14, y);
+
+    // Save
+    doc.save(`${seatNo}_${name}_Result.pdf`);
+}
 
