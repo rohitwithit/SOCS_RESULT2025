@@ -25,7 +25,6 @@ async function fetchResults() {
             '<div class="error">Error loading results</div>';
     }
 }
-
 // Keep displayResults() function the same
 function displayResults(data) {
     // Update student info
@@ -121,45 +120,6 @@ function displayResults(data) {
     document.getElementById('TOTAL').textContent = data.TOTAL;
     document.getElementById('PERCENTAGE').textContent = data.PERCENTAGE;
     document.getElementById('CGPA').textContent = data.CGPA;
-
-
-    const subjectCode = document.getElementById('subjectCodeElective');
-    const subjectName = document.getElementById('subjectNameElective');
-
-    const subjectCode1 = document.getElementById('subjectCodeElective1');
-    const subjectName1 = document.getElementById('subjectNameElective1');
-
-    const specificSeatNumbers = [
-        380785,
-        380788,
-        380793,
-        380798,
-        380810,
-        380821,
-        380823,
-        380825,
-        380826,
-        380832,
-        380836,
-        380843
-    ];
-
-    // Check if current student's seat is in the special list
-    if (specificSeatNumbers.includes(Number(data.SEAT_NO))) {
-        subjectCode.textContent = '1222420061';
-        subjectName.textContent = 'MCA-426(A) Digital Image Processing(DIP)';
-    } else {
-        subjectCode.textContent = '1222420063';
-        subjectName.textContent = 'MCA-427(A) Python Programming';
-    }
-
-    if (specificSeatNumbers.includes(Number(data.SEAT_NO))) {
-        subjectCode1.textContent = '1222420062';
-        subjectName1.textContent = 'MCA-426(B) Lab on DIP';
-    } else {
-        subjectCode1.textContent = '1222420064';
-        subjectName1.textContent = 'MCA-427(B) Lab on Python Programming';
-    }
 
 
 }
