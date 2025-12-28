@@ -5,10 +5,15 @@ async function fetchResults() {
         const data = await response.json();
 
         const SEAT_NO = localStorage.getItem('userSEAT_NO');
-        if (!SEAT_NO) window.location.href = 'index1.html';
+        if (!SEAT_NO || isNaN(SEAT_NO)) {
+            window.location.href = 'index1.html';
+            return;
+        }
+
+        const seatNo = Number(SEAT_NO);
 
         const studentData = data.find(student =>
-            student.SEAT_NO === parseInt(SEAT_NO)
+            Number(student.SEAT_NO) === seatNo
         );
 
         if (studentData) displayResults(studentData);
