@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Result - 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<style>
+    .div3 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 5px;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid black;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    tr:last-child td {
+        border-bottom: 1px solid black !important;
+        /* Ensure last row border */
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ccc;
+    }
+
+    #subnm {
+        text-align: left;
+    }
+
+    /* Main container */
+    .student-container {
+        display: flex;
+        background-color: #eff1f4;
+        border-radius: 15px;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Student information section */
+    #studentInfo1 {
+        flex: 2;
+        margin-left: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Student photo section */
+    #studentInfo2 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Information rows */
+    .info-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .info-item,
+    .info-item1 {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    /* Photo styling */
+    #PHOTO {
+        width: 170px;
+        height: 220px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid black;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .student-container {
+            flex-direction: column;
+        }
+
+        #studentInfo2 {
+            order: -1;
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    #lastrow{
+        font-size: 20px;
+    }
+    #head1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="KBCNMUlogo.jpeg" alt="KBCNMU Logo" class="logo">
+                <div class="title-container">
+                    <h3><b>Kavayitri Bahinabai Chaudhari North Maharashtra University,Jalgaon</b></h3>
+                    <h3><b>School of Computer Sciences</b></h3>
+                    <h1>MCA Semester-I Examination Nov/Dec - 2025</h1>
+                </div>
+                <img src="LOGO2.jpg" alt="KBCNMU Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><b>Statement of Grades</b></h2>
+            <h2><b>M.C.A. Part-I</b></h2>
+            <h3 id="rhead3">As Per NEP-2020 [June-2024] Pattern Examination held in Winter-2025</h3>
+            <div class="student-container">
+                <!-- Student Information (Left Side) -->
+                <div id="studentInfo1">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <p><strong>Seat No: </strong> <b id="head1"><span id="SEAT_NO" ></span></b></p>
+                        </div>
+                        <div class="info-item">
+                            <p><strong>Center: </strong> <b id="head1">1000</b></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="">
+                            <p><strong>PRN: </strong><b id="head1"><span id="PRN" ></span></b></p>
+                        </div>
+                        <div class="info-item1">
+                            <p><strong>Name: </strong> <b id="head1"><span id="NAME" ></span></b> (<b id="head1"><span id="MOTHER_NAME" ></span></b>)</p>
+                        </div>
+                        <div class="clg">
+                            <p><strong>College: </strong> <b id="head1">School of Computer Sciences, Jalgaon (10000G)</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Photo (Right Side) -->
+                <div id="studentInfo2">
+                    <img src="" alt="Student Photo" id="PHOTO">
+                </div>
+            </div>
+            <div id="studentInfo">
+                <div id="resultDetails" class="div3">
+                    <table>
+                        <tr>
+                            <th><b>Subject Code</b></th>
+                            <th id="subnm"><b>Subject Name</b></th>
+                            <th><b>INT</b></th>
+                            <th><b>EXT</b></th>
+                            <th><b>Total</b></th>
+                            <th><b>Out Of</b></th>
+                            <th><b>Credits</b></th>
+                            <th><b>Grade</b></th>
+                            <th><b>Grade Point</b></th>
+                            <th><b>Total Grade Points</b></th>
+                            <th><b>Status</b></th>
+                        </tr>
+                        <tr>
+                            <td>1222410001</td>
+                            <td id="subnm">MCA-411 Database Management System (DBMS)</td>
+                            <td><span id="MCA411I"></span></td>
+                            <td><span id="MCA411E"></span></td>
+                            <td><span id="MCA411TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCA411GR"></span></td>
+                            <td><span id="MCA411GP"></span></td>
+                            <td><span id="MCA411TGP"></span></td>
+                            <td><span id="MCA411STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410002</td>
+                            <td id="subnm">MCA-412 Operating Systems</td>
+                            <td><span id="MCA412I"></span></td>
+                            <td><span id="MCA412E"></span></td>
+                            <td><span id="MCA412TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCA412GR"></span></td>
+                            <td><span id="MCA412GP"></span></td>
+                            <td><span id="MCA412TGP"></span></td>
+                            <td><span id="MCA412STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410003</td>
+                            <td id="subnm">MCA-413 Fundamentals of Artificial Intelligence</td>
+                            <td><span id="MCA413I"></span></td>
+                            <td><span id="MCA413E"></span></td>
+                            <td><span id="MCA413TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCA413GR"></span></td>
+                            <td><span id="MCA413GP"></span></td>
+                            <td><span id="MCA413TGP"></span></td>
+                            <td><span id="MCA413STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410004</td>
+                            <td id="subnm">MCA-414 Object Oriented Programming Using C++</td>
+                            <td><span id="MCA414I"></span></td>
+                            <td><span id="MCA414E"></span></td>
+                            <td><span id="MCA414TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCA414GR"></span></td>
+                            <td><span id="MCA414GP"></span></td>
+                            <td><span id="MCA414TGP"></span></td>
+                            <td><span id="MCA414STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410005</td>
+                            <td id="subnm">MCA-415 Lab on DBMS</td>
+                            <td><span id="MCA415I"></span></td>
+                            <td><span id="MCA415E"></span></td>
+                            <td><span id="MCA415TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA415GR"></span></td>
+                            <td><span id="MCA415GP"></span></td>
+                            <td><span id="MCA415TGP"></span></td>
+                            <td><span id="MCA415STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410006</td>
+                            <td id="subnm">MCA-416 Lab on OS (Linux)</td>
+                            <td><span id="MCA416I"></span></td>
+                            <td><span id="MCA416E"></span></td>
+                            <td><span id="MCA416TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA416GR"></span></td>
+                            <td><span id="MCA416GP"></span></td>
+                            <td><span id="MCA416TGP"></span></td>
+                            <td><span id="MCA416STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410007</td>
+                            <td id="subnm">MCA-417 Lab on C++ Programming</td>
+                            <td><span id="MCA417I"></span></td>
+                            <td><span id="MCA417E"></span></td>
+                            <td><span id="MCA417TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA417GR"></span></td>
+                            <td><span id="MCA417GP"></span></td>
+                            <td><span id="MCA417TGP"></span></td>
+                            <td><span id="MCA417STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410083</td>
+                            <td id="subnm">MCA-420(A) Web Programming</td>
+                            <td><span id="MCA420AI"></span></td>
+                            <td><span id="MCA420AE"></span></td>
+                            <td><span id="MCA420ATL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA420AGR"></span></td>
+                            <td><span id="MCA420AGP"></span></td>
+                            <td><span id="MCA420ATGP"></span></td>
+                            <td><span id="MCA420ASTATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td>1222410084</td>
+                            <td id="subnm">MCA-420(B) Lab on Web Programming</td>
+                            <td><span id="MCA420BI"></span></td>
+                            <td><span id="MCA420BE"></span></td>
+                            <td><span id="MCA420BTL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCA420BGR"></span></td>
+                            <td><span id="MCA420BGP"></span></td>
+                            <td><span id="MCA420BTGP"></span></td>
+                            <td><span id="MCA420BSTATUS"></span></td>
+                        </tr> 
+                        <tr>
+                            <td colspan="2" id="lastrow"><b>CGPA : <span id="CGPA"></span></b></td>
+                            <td colspan="6" id="lastrow"><b>Percentage : <span id="PERCENTAGE"></span></b> </td>
+                            <td colspan="3" id="lastrow"><b>Total : <span id="TOTAL"></span> /650</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="11"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3><b>Date : 28/12/2025</b></h3>
+                </div>
+
+            </div>
+            <div >
+                <div id="btn11">
+                    <button onclick="downloadPDF()" class="download-btn1">Download PDF</button>
+                </div>
+                <div id="btn12">
+                    <button onclick="logout()" class="logout-btn" >Logout</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p><b>&copy; This is provisional result</b></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
