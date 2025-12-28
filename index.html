@@ -1,99 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOCS Result - 2025</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* Base Styles */
         body {
             background-image: url('main.jpg');
-            width: 100%;
-            height: 100px;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             margin: 0;
             padding: 0;
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .logo {
+            max-width: 80px;
+            height: auto;
+            border-radius: 50%;
         }
 
         #socs {
             color: white;
+            margin: 5px 0;
         }
 
-        .card {
+        .title-container h1 {
+            color: #ffd700;
+            font-size: 1.4rem;
+            margin-top: 10px;
+        }
+
+        /* The Main White Card */
+        .main-card {
             background-color: #F3F3E0;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
+        .section-title {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #03A791;
+            padding-bottom: 10px;
+        }
+
+        /* GRID SYSTEM: This puts Year 1 on Left and Year 2 on Right */
+        .columns-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows stacking on mobile */
+        }
+
+        .card2 {
+            flex: 1;
+            min-width: 300px; /* Minimum width before it snaps to vertical */
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+        }
+
+        .card2 h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+            border-bottom: 1px solid #03A791;
+            padding-bottom: 10px;
+        }
+
+        /* Button Styling */
         button {
             display: block;
             width: 100%;
-            padding: 12px 16px;
+            padding: 12px;
             background-color: #03A791;
             color: white;
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 500;
-            transition: background-color 0.2s;
-            max-width: 500px;
-            margin: 20px auto 0;
+            transition: 0.3s;
+            margin: 10px 0;
         }
 
         button:hover {
             background-color: #1765cc;
+            transform: translateY(-2px);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+            }
+            .columns-wrapper {
+                flex-direction: column;
+            }
+            .card2 {
+                min-width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container" id="back_image">
-        <div class="header">
-            <div class="logo-container">
-                <img src="KBCNMUlogo.jpeg" alt="KBCNMU Logo" class="logo">
-                <div class="title-container">
-                    <h3 id="socs"><b>Kavayitri Bahinabai Chaudhari North Maharashtra University,Jalgaon</b></h3>
-                    <h3 id="socs"><b>School of Computer Sciences</b></h3>
-                    <h1>Semester-III and Semester-II Examination Nov/Dec - 2025</h1>
-
-                </div>
-                <img src="LOGO2.jpg" alt="KBCNMU Logo" class="logo">
+    <div class="container">
+        <!-- Header Section -->
+        <div class="logo-container">
+            <img src="KBCNMUlogo.jpeg" alt="Logo" class="logo">
+            <div class="title-container">
+                <h3 id="socs"><b>Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon</b></h3>
+                <h3 id="socs"><b>School of Computer Sciences</b></h3>
+                <h1>External Examination  Result Nov/Dec - 2025</h1>
             </div>
+            <img src="LOGO2.jpg" alt="Logo" class="logo">
         </div>
 
-        <div class="card">
-            <div>
+        <!-- Selection Card -->
+        <div class="main-card">
+            <div class="section-title">
                 <h2>Choose Your Course</h2>
             </div>
-            <div>
-                <a href="MCA/index1.html" target="_self">
-                    <button type="button">MCA Sem-II (Updated)</button>
-                </a>
-                <a href="MSCIT/index1.html" target="_self">
-                    <button type="button">M.Sc - IT Semester-II</button>
-                </a>
-                <a href="MSCCS/index1.html" target="_self">
-                    <button type="button">M.Sc - Computer Science</button>
-                </a>
-                <a href="MCAIII/index1.html" target="_self">
-                    <button type="button">MCA Semester-III</button>
-                </a>
-                <a href="MSCIT_III/index1.html" target="_self">
-                    <button type="button">M.Sc - IT Semester-III</button>
-                </a>
+
+            <div class="columns-wrapper">
+                <!-- LEFT SIDE: First Year -->
+                <div class="card2">
+                    <h2>First Year</h2>
+                    <a href="MCA_I/index1.html"><button type="button">MCA Semester-I</button></a>
+                    <a href="MSCDS_I/index1.html"><button type="button">M.Sc - Data Science Semester-I</button></a>
+                    <a href="MSCCS_I/index1.html"><button type="button">M.Sc - CS Semester-I</button></a>
+                </div>
+
+                <!-- RIGHT SIDE: Second Year -->
+                <div class="card2">
+                    <h2>Second Year</h2>
+                    <a href="MCA/index1.html"><button type="button">MCA Sem-II (Updated)</button></a>
+                    <a href="MSCIT/index1.html"><button type="button">M.Sc - IT Semester-II</button></a>
+                    <a href="MSCCS/index1.html"><button type="button">M.Sc - CS Semester-II</button></a>
+                    <a href="MCAIII/index1.html"><button type="button">MCA Semester-III</button></a>
+                    <a href="MSCIT_III/index1.html"><button type="button">M.Sc - IT Semester-III</button></a>
+                    <a href="MSCCS_III/index1.html"><button type="button">M.Sc - CS Semester-III</button></a>
+                </div>
             </div>
         </div>
 
         <footer>
-            <p id="socs">Disclaimer : Your information is safe. We use encryption and never share your data without your
-                permission. </p>
+            <p>Disclaimer: Your information is safe. We use encryption and never share your data without your permission.</p>
         </footer>
     </div>
 </body>
-
 </html>
