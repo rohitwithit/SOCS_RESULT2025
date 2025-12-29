@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc-Data Science Result - 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<style>
+    .div3 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 5px;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid black;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    tr:last-child td {
+        border-bottom: 1px solid black !important;
+        /* Ensure last row border */
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ccc;
+    }
+
+    #subnm {
+        text-align: left;
+    }
+
+    /* Main container */
+    .student-container {
+        display: flex;
+        background-color: #eff1f4;
+        border-radius: 15px;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Student information section */
+    #studentInfo1 {
+        flex: 2;
+        margin-left: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Student photo section */
+    #studentInfo2 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Information rows */
+    .info-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .info-item,
+    .info-item1 {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    /* Photo styling */
+    #PHOTO {
+        width: 170px;
+        height: 220px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid black;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .student-container {
+            flex-direction: column;
+        }
+
+        #studentInfo2 {
+            order: -1;
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    #lastrow {
+        font-size: 20px;
+    }
+
+    #head1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    #mcs424 {
+        text-align: left;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="KBCNMUlogo.jpeg" alt="KBCNMU Logo" class="logo">
+                <div class="title-container">
+                    <h3><b>Kavayitri Bahinabai Chaudhari North Maharashtra University,Jalgaon</b></h3>
+                    <h3><b>School of Computer Sciences</b></h3>
+                    <h1>M.Sc-DS Semester-I Examination Nov/Dec - 2025</h1>
+                </div>
+                <img src="LOGO2.jpg" alt="KBCNMU Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><b>Statement of Grades</b></h2>
+            <h2><b>M.Sc-DS Part-I</b></h2>
+            <h3 id="rhead3">As Per NEP-2020 Pattern Examination held in Winter-2025</h3>
+            <div class="student-container">
+                <!-- Student Information (Left Side) -->
+                <div id="studentInfo1">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <p><strong>Seat No: </strong> <b id="head1"><span id="SEAT_NO"></span></b></p>
+                        </div>
+                        <div class="info-item">
+                            <p><strong>Center: </strong> <b id="head1">1000</b></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="">
+                            <p><strong>PRN: </strong><b id="head1"><span id="PRN"></span></b></p>
+                        </div>
+                        <div class="info-item1">
+                            <p><strong>Name: </strong> <b id="head1"><span id="NAME"></span></b> (<b id="head1"><span
+                                        id="MOTHER_NAME"></span></b>)</p>
+                        </div>
+                        <div class="clg">
+                            <p><strong>College: </strong> <b id="head1">School of Computer Sciences, Jalgaon
+                                    (10000G)</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Photo (Right Side) -->
+                <div id="studentInfo2">
+                    <img src="" alt="Student Photo" id="PHOTO">
+                </div>
+            </div>
+            <div id="studentInfo">
+                <div id="resultDetails" class="div3">
+                    <table>
+                        <tr>
+                            <th><b>Subject Code</b></th>
+                            <th id="subnm"><b>Subject Name</b></th>
+                            <th><b>INT</b></th>
+                            <th><b>EXT</b></th>
+                            <th><b>Total</b></th>
+                            <th><b>Out Of</b></th>
+                            <th><b>Credits</b></th>
+                            <th><b>Grade</b></th>
+                            <th><b>Grade Point</b></th>
+                            <th><b>Total Grade Points</b></th>
+                            <th><b>Status</b></th>
+                        </tr>
+                        <!-- MDS101 -->
+                        <tr>
+                            <td>1272516101</td>
+                            <td id="subnm">MDS-101 Mathematical Foundation for Data Science</td>
+                            <td><span id="MDS101I"></span></td>
+                            <td><span id="MDS101E"></span></td>
+                            <td><span id="MDS101TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MDS101GR"></span></td>
+                            <td><span id="MDS101GP"></span></td>
+                            <td><span id="MDS101TGP"></span></td>
+                            <td><span id="MDS101STATUS"></span></td>
+                        </tr>
+
+                        <!-- MDS102 -->
+                        <tr>
+                            <td>1272516102</td>
+                            <td id="subnm">MDS-102 Data Structures and Algorithms</td>
+                            <td><span id="MDS102I"></span></td>
+                            <td><span id="MDS102E"></span></td>
+                            <td><span id="MDS102TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MDS102GR"></span></td>
+                            <td><span id="MDS102GP"></span></td>
+                            <td><span id="MDS102TGP"></span></td>
+                            <td><span id="MDS102STATUS"></span></td>
+                        </tr>
+
+                        <!-- MDS103 -->
+                        <tr>
+                            <td>1272516103</td>
+                            <td id="subnm">MDS-103 Fundamental of Programming</td>
+                            <td><span id="MDS103I"></span></td>
+                            <td><span id="MDS103E"></span></td>
+                            <td><span id="MDS103TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MDS103GR"></span></td>
+                            <td><span id="MDS103GP"></span></td>
+                            <td><span id="MDS103TGP"></span></td>
+                            <td><span id="MDS103STATUS"></span></td>
+                        </tr>
+
+                        <!-- MDS104 -->
+                        <tr>
+                            <td>1272516104</td>
+                            <td id="subnm">MDS-104 Lab on Python for Data Science</td>
+                            <td><span id="MDS104I"></span></td>
+                            <td><span id="MDS104E"></span></td>
+                            <td><span id="MDS104TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MDS104GR"></span></td>
+                            <td><span id="MDS104GP"></span></td>
+                            <td><span id="MDS104TGP"></span></td>
+                            <td><span id="MDS104STATUS"></span></td>
+                        </tr>
+                        <!-- MDS105 -->
+                        <tr>
+                            <td>1272516105</td>
+                            <td id="subnm">MDS-105 Lab on Data Structures and Algorithms</td>
+                            <td><span id="MDS105I"></span></td>
+                            <td><span id="MDS105E"></span></td>
+                            <td><span id="MDS105TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MDS105GR"></span></td>
+                            <td><span id="MDS105GP"></span></td>
+                            <td><span id="MDS105TGP"></span></td>
+                            <td><span id="MDS105STATUS"></span></td>
+                        </tr>
+
+                        <!-- MDSE106A -->
+                        <tr>
+                            <td>1272516106</td>
+                            <td id="subnm">MDS-106(A) Java Programming</td>
+                            <td><span id="MDSE106AI"></span></td>
+                            <td><span id="MDSE106AE"></span></td>
+                            <td><span id="MDSE106ATL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MDSE106AGR"></span></td>
+                            <td><span id="MDSE106AGP"></span></td>
+                            <td><span id="MDSE106ATGP"></span></td>
+                            <td><span id="MDSE106ASTATUS"></span></td>
+                        </tr>
+                        <!-- MDSE106B -->
+                        <tr>
+                            <td>1272516107</td>
+                            <td id="subnm">MDSE-417(B) LAB on JAVA Programming</td>
+                            <td><span id="MDSE106BI"></span></td>
+                            <td><span id="MDSE106BE"></span></td>
+                            <td><span id="MDSE106BTL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MDSE106BGR"></span></td>
+                            <td><span id="MDSE106BGP"></span></td>
+                            <td><span id="MDSE106BTGP"></span></td>
+                            <td><span id="MDSE106BSTATUS"></span></td>
+                        </tr>
+                        <!-- MDS108 -->
+                        <tr>
+                            <td>1272312472</td>
+                            <td id="subnm">MDS-108 Research Methodology</td>
+                            <td><span id="MDS108I"></span></td>
+                            <td><span id="MDS108E"></span></td>
+                            <td><span id="MDS108TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MDS108GR"></span></td>
+                            <td><span id="MDS108GP"></span></td>
+                            <td><span id="MDS108TGP"></span></td>
+                            <td><span id="MDS108STATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="lastrow"><b>CGPA : <span id="CGPA"></span></b></td>
+                            <td colspan="6" id="lastrow"><b>Percentage : <span id="PERCENTAGE"></span></b> </td>
+                            <td colspan="3" id="lastrow"><b>Total : <span id="TOTAL"></span> /550</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="11"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3><b>Date : 28/12/2025</b></h3>
+                </div>
+
+            </div>
+            <div>
+                <div id="btn11">
+                    <button onclick="downloadPDF()" class="download-btn1">Download PDF</button>
+                </div>
+                <div id="btn12">
+                    <button onclick="logout()" class="logout-btn">Logout</button>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p><b>&copy; This is provisional result</b></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
