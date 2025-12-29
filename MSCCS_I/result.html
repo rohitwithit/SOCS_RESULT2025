@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc-Computer Science Result - 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<style>
+    .div3 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 5px;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid black;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    tr:last-child td {
+        border-bottom: 1px solid black !important;
+        /* Ensure last row border */
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ccc;
+    }
+
+    #subnm {
+        text-align: left;
+    }
+
+    /* Main container */
+    .student-container {
+        display: flex;
+        background-color: #eff1f4;
+        border-radius: 15px;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Student information section */
+    #studentInfo1 {
+        flex: 2;
+        margin-left: 50px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Student photo section */
+    #studentInfo2 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Information rows */
+    .info-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .info-item,
+    .info-item1 {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    /* Photo styling */
+    #PHOTO {
+        width: 170px;
+        height: 220px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid black;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .student-container {
+            flex-direction: column;
+        }
+
+        #studentInfo2 {
+            order: -1;
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    #lastrow {
+        font-size: 20px;
+    }
+
+    #head1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    #mcs424 {
+        text-align: left;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="KBCNMUlogo.jpeg" alt="KBCNMU Logo" class="logo">
+                <div class="title-container">
+                    <h3><b>Kavayitri Bahinabai Chaudhari North Maharashtra University,Jalgaon</b></h3>
+                    <h3><b>School of Computer Sciences</b></h3>
+                    <h1>M.Sc-CS Semester-I Examination Nov/Dec - 2025</h1>
+                </div>
+                <img src="LOGO2.jpg" alt="KBCNMU Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><b>Statement of Grades</b></h2>
+            <h2><b>M.Sc-CS Part-I</b></h2>
+            <h3 id="rhead3">As Per NEP-2020 Pattern Examination held in Winter-2025</h3>
+            <div class="student-container">
+                <!-- Student Information (Left Side) -->
+                <div id="studentInfo1">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <p><strong>Seat No: </strong> <b id="head1"><span id="SEAT_NO"></span></b></p>
+                        </div>
+                        <div class="info-item">
+                            <p><strong>Center: </strong> <b id="head1">1000</b></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="">
+                            <p><strong>PRN: </strong><b id="head1"><span id="PRN"></span></b></p>
+                        </div>
+                        <div class="info-item1">
+                            <p><strong>Name: </strong> <b id="head1"><span id="NAME"></span></b> (<b id="head1"><span
+                                        id="MOTHER_NAME"></span></b>)</p>
+                        </div>
+                        <div class="clg">
+                            <p><strong>College: </strong> <b id="head1">School of Computer Sciences, Jalgaon
+                                    (10000G)</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Photo (Right Side) -->
+                <div id="studentInfo2">
+                    <img src="" alt="Student Photo" id="PHOTO">
+                </div>
+            </div>
+            <div id="studentInfo">
+                <div id="resultDetails" class="div3">
+                    <table>
+                        <tr>
+                            <th><b>Subject Code</b></th>
+                            <th id="subnm"><b>Subject Name</b></th>
+                            <th><b>INT</b></th>
+                            <th><b>EXT</b></th>
+                            <th><b>Total</b></th>
+                            <th><b>Out Of</b></th>
+                            <th><b>Credits</b></th>
+                            <th><b>Grade</b></th>
+                            <th><b>Grade Point</b></th>
+                            <th><b>Total Grade Points</b></th>
+                            <th><b>Status</b></th>
+                        </tr>
+                        <!-- MCS411 -->
+                        <tr>
+                            <td>1272312401</td>
+                            <td id="subnm">MCS-411 Data Structures and Algorithms</td>
+                            <td><span id="MCS411I"></span></td>
+                            <td><span id="MCS411E"></span></td>
+                            <td><span id="MCS411TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCS411GR"></span></td>
+                            <td><span id="MCS411GP"></span></td>
+                            <td><span id="MCS411TGP"></span></td>
+                            <td><span id="MCS411STATUS"></span></td>
+                        </tr>
+
+                        <!-- MCS412 -->
+                        <tr>
+                            <td>1272312402</td>
+                            <td id="subnm">MCS-412 Database Management System (DBMS)</td>
+                            <td><span id="MCS412I"></span></td>
+                            <td><span id="MCS412E"></span></td>
+                            <td><span id="MCS412TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCS412GR"></span></td>
+                            <td><span id="MCS412GP"></span></td>
+                            <td><span id="MCS412TGP"></span></td>
+                            <td><span id="MCS412STATUS"></span></td>
+                        </tr>
+
+                        <!-- MCS413 -->
+                        <tr>
+                            <td>1272312403</td>
+                            <td id="subnm">MCS-413 Automata Theory and Computability</td>
+                            <td><span id="MCS413I"></span></td>
+                            <td><span id="MCS413E"></span></td>
+                            <td><span id="MCS413TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCS413GR"></span></td>
+                            <td><span id="MCS413GP"></span></td>
+                            <td><span id="MCS413TGP"></span></td>
+                            <td><span id="MCS413STATUS"></span></td>
+                        </tr>
+
+                        <!-- MCS414 -->
+                        <tr>
+                            <td>1272312404</td>
+                            <td id="subnm">MCS-414 LAB on Data Structures</td>
+                            <td><span id="MCS414I"></span></td>
+                            <td><span id="MCS414E"></span></td>
+                            <td><span id="MCS414TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCS414GR"></span></td>
+                            <td><span id="MCS414GP"></span></td>
+                            <td><span id="MCS414TGP"></span></td>
+                            <td><span id="MCS414STATUS"></span></td>
+                        </tr>
+                        <!-- MCS415 -->
+                        <tr>
+                            <td>1272312405</td>
+                            <td id="subnm">MCS-415 LAB on DBMS</td>
+                            <td><span id="MCS415I"></span></td>
+                            <td><span id="MCS415E"></span></td>
+                            <td><span id="MCS415TL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCS415GR"></span></td>
+                            <td><span id="MCS415GP"></span></td>
+                            <td><span id="MCS415TGP"></span></td>
+                            <td><span id="MCS415STATUS"></span></td>
+                        </tr>
+
+                        <!-- MCS416 -->
+                        <tr>
+                            <td>1272312406</td>
+                            <td id="subnm">MCS-416 Research Methodology</td>
+                            <td><span id="MCS416I"></span></td>
+                            <td><span id="MCS416E"></span></td>
+                            <td><span id="MCS416TL"></span></td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td><span id="MCS416GR"></span></td>
+                            <td><span id="MCS416GP"></span></td>
+                            <td><span id="MCS416TGP"></span></td>
+                            <td><span id="MCS416STATUS"></span></td>
+                        </tr>
+                        <!-- MCSE417A -->
+                        <tr>
+                            <td>1272312471</td>
+                            <td id="subnm">MCSE-417(A) Object Oriented Programming using JAVA</td>
+                            <td><span id="MCSE417AI"></span></td>
+                            <td><span id="MCSE417AE"></span></td>
+                            <td><span id="MCSE417ATL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCSE417AGR"></span></td>
+                            <td><span id="MCSE417AGP"></span></td>
+                            <td><span id="MCSE417ATGP"></span></td>
+                            <td><span id="MCSE417ASTATUS"></span></td>
+                        </tr>
+                        <!-- MCSE417B -->
+                        <tr>
+                            <td>1272312472</td>
+                            <td id="subnm">MCSE-417(B) LAB on Object Oriented Programming using JAVA</td>
+                            <td><span id="MCSE417BI"></span></td>
+                            <td><span id="MCSE417BE"></span></td>
+                            <td><span id="MCSE417BTL"></span></td>
+                            <td>50</td>
+                            <td>2</td>
+                            <td><span id="MCSE417BGR"></span></td>
+                            <td><span id="MCSE417BGP"></span></td>
+                            <td><span id="MCSE417BTGP"></span></td>
+                            <td><span id="MCSE417BSTATUS"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="lastrow"><b>CGPA : <span id="CGPA"></span></b></td>
+                            <td colspan="6" id="lastrow"><b>Percentage : <span id="PERCENTAGE"></span></b> </td>
+                            <td colspan="3" id="lastrow"><b>Total : <span id="TOTAL"></span> /550</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="11"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3><b>Date : 28/12/2025</b></h3>
+                </div>
+
+            </div>
+            <div>
+                <div id="btn11">
+                    <button onclick="downloadPDF()" class="download-btn1">Download PDF</button>
+                </div>
+                <div id="btn12">
+                    <button onclick="logout()" class="logout-btn">Logout</button>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p><b>&copy; This is provisional result</b></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
