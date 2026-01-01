@@ -547,9 +547,9 @@
     "MCSE517BGP": "9",
     "MCSE517BTGP": "18",
     "MCSE517BSTATUS": "P",
-    "MCS511I": "29",
+    "MCS511I": "39",
     "MCS511E": "56",
-    "MCS511TL": "85",
+    "MCS511TL": "95",
     "MCS511GR": "O",
     "MCS511GP": "10",
     "MCS511TGP": "40",
@@ -589,8 +589,8 @@
     "MCS516GP": "10",
     "MCS516TGP": "20",
     "MCS516STATUS": "P",
-    "TOTAL": "500",
-    "PERCENTAGE": "90.91",
+    "TOTAL": "510",
+    "PERCENTAGE": "92.73",
     "CGPA": "9.82"
   },
   {
